@@ -1,10 +1,18 @@
 /* roboto-condensed-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-condensed-v27-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/roboto-condensed-v27-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* pt-serif-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt-serif-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 :root {
@@ -47,7 +55,7 @@ a {
   padding-right: 15px;
 }
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.33;
@@ -84,4 +92,177 @@ body {
 .header__menu-item:hover {
   color: #ffffff;
   background-color: #000;
+}
+.slider__item {
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.slick-arrow {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  cursor: pointer;
+}
+.slick-next {
+  right: 20px;
+}
+.slick-prev {
+  left: 20px;
+}
+.search__wrapper {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  margin: 60px 0;
+  column-gap: 69px;
+}
+.header__text {
+  max-width: 156px;
+  font-size: 24px;
+  color: var(--primapy-grey);
+  line-height: 1;
+  text-align: left;
+}
+.form__search {
+  min-width: 431px;
+
+  border: 2px solid #c4c4c4;
+  padding: 0 15px;
+}
+.button__search {
+  display: flex;
+
+  column-gap: 3px;
+  padding: 23px 23px 23px 9px;
+  color: #ffffff;
+  background-color: #c4c4c4;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header__search {
+  display: flex;
+}
+.header__search::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #888;
+  margin: 5px;
+}
+.choise__title-wrap {
+  text-align: center;
+  background-color: #000;
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+.choise__title {
+  font-family: 'PT Serif';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 18px 0;
+}
+.card__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+.card__item {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+}
+.card__img {
+  border-radius: 50%;
+}
+.card__title {
+  font-family: 'Roboto Condensed';
+  font-size: 24px;
+  color: #c4c4c4;
+  font-weight: 400;
+  line-height: 1;
+  max-width: 200px;
+}
+.card__button {
+  color: #ffffff;
+  background-color: #c4c4c4;
+  border: 2px solid var(--primapy-grey);
+  padding: 13px 46px;
+}
+.info__wrapper {
+  margin-bottom: 111px;
+  display: flex;
+  column-gap: 129px;
+}
+.info__item-top {
+  display: flex;
+  column-gap: 33px;
+  margin-bottom: 20px;
+}
+.info__title {
+  max-width: 350px;
+  font-family: 'PT Serif';
+  font-size: 36px;
+  line-height: 1;
+  text-align: left;
+}
+.info__text {
+  max-width: 470px;
+  text-align: left;
+  margin-bottom: 42px;
+}
+.info__more {
+  color: #c4c4c4;
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+}
+.info__btn-text {
+  border-bottom: 2px solid var(--primapy-grey);
+}
+.kotage__img {
+  height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.kotage__wrapper {
+  padding-top: 68px;
+  text-align: end;
+}
+.kotage__title {
+  color: var(--primapy-light);
+  margin-left: auto;
+  font-family: 'PT Serif';
+  font-size: 48px;
+  line-height: 1;
+  max-width: 450px;
+  margin-bottom: 15px;
+}
+.kotage__btn {
+  font-family: 'Roboto Condensed';
+  font-size: 18px;
+  line-height: 1;
+  padding: 16px 17px;
+  background-color: #000;
+  color: #ffffff;
+}
+.contact {
+  background-color: var(--primapy-dark);
+}
+.maneger_img {
+  border-radius: 50%;
+}
+.footer {
+  margin-bottom: 23px;
 }
